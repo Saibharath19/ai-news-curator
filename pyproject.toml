@@ -1,0 +1,24 @@
+[project]
+name = "project3"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Saibharath19", email = "bharathkatamneni@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "datetime>=5.5",
+    "feedparser>=6.0.12",
+    "groq>=1.0.0",
+    "pandas>=2.3.3",
+    "pydantic>=2.13.4",
+    "python-dotenv>=1.2.1",
+]
+
+[project.scripts]
+project3 = "project3:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
